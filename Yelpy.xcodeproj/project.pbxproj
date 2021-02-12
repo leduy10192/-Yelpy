@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C7AF41525D63C9C00563AD1 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7AF41425D63C9C00563AD1 /* Restaurant.swift */; };
+		0C7AF41E25D64ABF00563AD1 /* YelpStars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7AF41D25D64ABF00563AD1 /* YelpStars.swift */; };
+		0C7AF42325D6505200563AD1 /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7AF42225D6505200563AD1 /* RestaurantDetailViewController.swift */; };
 		0CFAD84C25CDD7BB00C3ADE2 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFAD84B25CDD7BB00C3ADE2 /* RestaurantCell.swift */; };
 		BB47B3AA247739640029FFF6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB47B3A9247739640029FFF6 /* API.swift */; };
 		BB47B3AF2477426A0029FFF6 /* exampleAPI.json in Resources */ = {isa = PBXBuildFile; fileRef = BB47B3AE2477426A0029FFF6 /* exampleAPI.json */; };
@@ -20,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C7AF41425D63C9C00563AD1 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		0C7AF41D25D64ABF00563AD1 /* YelpStars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpStars.swift; sourceTree = "<group>"; };
+		0C7AF42225D6505200563AD1 /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		0CFAD84B25CDD7BB00C3ADE2 /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
 		4ED4C73FD51FDFC62216E5DE /* Pods-Yelpy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yelpy.debug.xcconfig"; path = "Target Support Files/Pods-Yelpy/Pods-Yelpy.debug.xcconfig"; sourceTree = "<group>"; };
 		4F45387EF0BCD4FD0EAD369F /* Pods_Yelpy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yelpy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +54,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C7AF41325D63C5500563AD1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0C7AF41425D63C9C00563AD1 /* Restaurant.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0C7AF41C25D64AA500563AD1 /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				0C7AF41D25D64ABF00563AD1 /* YelpStars.swift */,
+			);
+			path = Extra;
+			sourceTree = "<group>";
+		};
 		2344D15B0FAC56D7DA5C2A30 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				BBEBF10F247738A50044AFE0 /* RestaurantsViewController.swift */,
+				0C7AF42225D6505200563AD1 /* RestaurantDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -123,10 +146,12 @@
 				BBEBF10B247738A50044AFE0 /* AppDelegate.swift */,
 				BBEBF10D247738A50044AFE0 /* SceneDelegate.swift */,
 				BB47B3AE2477426A0029FFF6 /* exampleAPI.json */,
+				0C7AF41325D63C5500563AD1 /* Models */,
 				BB47B3B32477539A0029FFF6 /* Cells */,
 				BB47B3AC247739890029FFF6 /* Controllers */,
 				BB47B3AB247739720029FFF6 /* Network */,
 				BB47B3AD247739F00029FFF6 /* Storyboards */,
+				0C7AF41C25D64AA500563AD1 /* Extra */,
 				BBEBF119247738A50044AFE0 /* Info.plist */,
 			);
 			path = Yelpy;
@@ -250,9 +275,12 @@
 			files = (
 				0CFAD84C25CDD7BB00C3ADE2 /* RestaurantCell.swift in Sources */,
 				BBEBF110247738A50044AFE0 /* RestaurantsViewController.swift in Sources */,
+				0C7AF42325D6505200563AD1 /* RestaurantDetailViewController.swift in Sources */,
+				0C7AF41525D63C9C00563AD1 /* Restaurant.swift in Sources */,
 				BB47B3AA247739640029FFF6 /* API.swift in Sources */,
 				BBEBF10C247738A50044AFE0 /* AppDelegate.swift in Sources */,
 				BBEBF10E247738A50044AFE0 /* SceneDelegate.swift in Sources */,
+				0C7AF41E25D64ABF00563AD1 /* YelpStars.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

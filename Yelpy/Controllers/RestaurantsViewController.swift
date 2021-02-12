@@ -19,7 +19,7 @@ import AlamofireImage
     
     // –––––– TODO: Initialize restaurantsArray
     
-    var restaurantsArray: [[String: Any?]] = []
+    var restaurantsArray: [Restaurant] = []
     
     // ––––– TODO: Add tableView datasource + delegate
     override func viewDidLoad() {
@@ -44,6 +44,15 @@ import AlamofireImage
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        if let indexPath = tableView.indexPath(for: cell){
+            let r = restaurantsArray[indexPath.row]
+            let detailVC = segue.destination as! RestaurantDetailViewController
+            detailVC.r = r
+        }
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return restaurantsArray.count
     }
@@ -53,12 +62,7 @@ import AlamofireImage
         
         let restaurant = restaurantsArray[indexPath.row]
         
-        cell.label.text = restaurant["name"] as? String ?? ""
-        
-        if let imageUrlString = restaurant["image_url"] as? String{
-            let imageUrl = URL(string: imageUrlString)
-            cell.restaurantImage.af.setImage(withURL: imageUrl!)
-        }
+        cell.r = restaurant
         return cell
     }
 
