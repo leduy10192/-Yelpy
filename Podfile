@@ -10,4 +10,5 @@ target 'Yelpy' do
   pod 'AlamofireImage'
   pod 'lottie-ios'
   pod 'SkeletonView'
+  pod 'Parse'
 end

@@ -13,6 +13,9 @@
 		0C7AF41525D63C9C00563AD1 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7AF41425D63C9C00563AD1 /* Restaurant.swift */; };
 		0C7AF41E25D64ABF00563AD1 /* YelpStars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7AF41D25D64ABF00563AD1 /* YelpStars.swift */; };
 		0C7AF42325D6505200563AD1 /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7AF42225D6505200563AD1 /* RestaurantDetailViewController.swift */; };
+		0CB8BBF825F2225E0083F8EB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB8BBF725F2225E0083F8EB /* LoginViewController.swift */; };
+		0CB8BC2725F22DFF0083F8EB /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB8BC2625F22DFF0083F8EB /* ChatViewController.swift */; };
+		0CB8BC2A25F232CA0083F8EB /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB8BC2925F232CA0083F8EB /* ChatCell.swift */; };
 		0CFAD84C25CDD7BB00C3ADE2 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFAD84B25CDD7BB00C3ADE2 /* RestaurantCell.swift */; };
 		BB47B3AA247739640029FFF6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB47B3A9247739640029FFF6 /* API.swift */; };
 		BB47B3AF2477426A0029FFF6 /* exampleAPI.json in Resources */ = {isa = PBXBuildFile; fileRef = BB47B3AE2477426A0029FFF6 /* exampleAPI.json */; };
@@ -32,6 +35,9 @@
 		0C7AF41425D63C9C00563AD1 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		0C7AF41D25D64ABF00563AD1 /* YelpStars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpStars.swift; sourceTree = "<group>"; };
 		0C7AF42225D6505200563AD1 /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
+		0CB8BBF725F2225E0083F8EB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0CB8BC2625F22DFF0083F8EB /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		0CB8BC2925F232CA0083F8EB /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 		0CFAD84B25CDD7BB00C3ADE2 /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
 		4ED4C73FD51FDFC62216E5DE /* Pods-Yelpy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yelpy.debug.xcconfig"; path = "Target Support Files/Pods-Yelpy/Pods-Yelpy.debug.xcconfig"; sourceTree = "<group>"; };
 		4F45387EF0BCD4FD0EAD369F /* Pods_Yelpy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yelpy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +85,15 @@
 			path = Extra;
 			sourceTree = "<group>";
 		};
+		0CB8BBF625F222090083F8EB /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				0CB8BBF725F2225E0083F8EB /* LoginViewController.swift */,
+				0CB8BC2625F22DFF0083F8EB /* ChatViewController.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
 		2344D15B0FAC56D7DA5C2A30 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +122,7 @@
 		BB47B3AC247739890029FFF6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0CB8BBF625F222090083F8EB /* Chat */,
 				BBEBF10F247738A50044AFE0 /* RestaurantsViewController.swift */,
 				0C7AF42225D6505200563AD1 /* RestaurantDetailViewController.swift */,
 			);
@@ -126,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				0CFAD84B25CDD7BB00C3ADE2 /* RestaurantCell.swift */,
+				0CB8BC2925F232CA0083F8EB /* ChatCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -293,6 +310,9 @@
 				BBEBF10C247738A50044AFE0 /* AppDelegate.swift in Sources */,
 				BBEBF10E247738A50044AFE0 /* SceneDelegate.swift in Sources */,
 				0C7AF41E25D64ABF00563AD1 /* YelpStars.swift in Sources */,
+				0CB8BC2A25F232CA0083F8EB /* ChatCell.swift in Sources */,
+				0CB8BC2725F22DFF0083F8EB /* ChatViewController.swift in Sources */,
+				0CB8BBF825F2225E0083F8EB /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
