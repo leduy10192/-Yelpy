@@ -18,6 +18,9 @@ class Restaurant {
     var rating: Double
     var reviews: Int
     
+    // MARK: Lab 6:  Refactor Restaurant Model
+    var coordinates: [String:Double]
+    
     init(dict: [String: Any]){
         imageURL = URL(string: dict["image_url"] as! String)
         name = dict["name"] as! String
@@ -26,6 +29,10 @@ class Restaurant {
         phone = dict["display_phone"] as! String
         url = URL(string: dict["url"] as! String)
         mainCategory = Restaurant.getMainCategory(dict:dict)
+        
+        // LAB 6
+        // MARK: Lab 6:  Refactor Restaurant Model
+        coordinates = dict["coordinates"] as! [String:Double]
     }
     
     static func getMainCategory(dict: [String:Any]) -> String {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C28463325FB428900F8D93A /* PostImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C28463225FB428900F8D93A /* PostImageViewController.swift */; };
+		0C28463625FB466100F8D93A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C28463525FB466100F8D93A /* MapKit.framework */; };
 		0C77A1B825E8BEB100E698B0 /* 4762-food-carousel.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C77A1B725E8BEB100E698B0 /* 4762-food-carousel.json */; };
 		0C77A1BC25E8CEE800E698B0 /* FileSubviewsSkeletonables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C77A1BA25E8CEE800E698B0 /* FileSubviewsSkeletonables.swift */; };
 		0C77A1BD25E8CEE800E698B0 /* stars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C77A1BB25E8CEE800E698B0 /* stars.swift */; };
@@ -29,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C28463225FB428900F8D93A /* PostImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageViewController.swift; sourceTree = "<group>"; };
+		0C28463525FB466100F8D93A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0C77A1B725E8BEB100E698B0 /* 4762-food-carousel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "4762-food-carousel.json"; sourceTree = "<group>"; };
 		0C77A1BA25E8CEE800E698B0 /* FileSubviewsSkeletonables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileSubviewsSkeletonables.swift; sourceTree = "<group>"; };
 		0C77A1BB25E8CEE800E698B0 /* stars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stars.swift; sourceTree = "<group>"; };
@@ -59,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C28463625FB466100F8D93A /* MapKit.framework in Frameworks */,
 				DEB0D3CBF2C6E48DC3500274 /* Pods_Yelpy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,6 +71,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C28463025FB422D00F8D93A /* MainFeed */ = {
+			isa = PBXGroup;
+			children = (
+				BBEBF10F247738A50044AFE0 /* RestaurantsViewController.swift */,
+				0C7AF42225D6505200563AD1 /* RestaurantDetailViewController.swift */,
+				0C28463225FB428900F8D93A /* PostImageViewController.swift */,
+			);
+			path = MainFeed;
+			sourceTree = "<group>";
+		};
 		0C7AF41325D63C5500563AD1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +121,7 @@
 		7D8BA013843B8AF0BF0FE308 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0C28463525FB466100F8D93A /* MapKit.framework */,
 				4F45387EF0BCD4FD0EAD369F /* Pods_Yelpy.framework */,
 			);
 			name = Frameworks;
@@ -123,8 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				0CB8BBF625F222090083F8EB /* Chat */,
-				BBEBF10F247738A50044AFE0 /* RestaurantsViewController.swift */,
-				0C7AF42225D6505200563AD1 /* RestaurantDetailViewController.swift */,
+				0C28463025FB422D00F8D93A /* MainFeed */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -312,6 +327,7 @@
 				0C7AF41E25D64ABF00563AD1 /* YelpStars.swift in Sources */,
 				0CB8BC2A25F232CA0083F8EB /* ChatCell.swift in Sources */,
 				0CB8BC2725F22DFF0083F8EB /* ChatViewController.swift in Sources */,
+				0C28463325FB428900F8D93A /* PostImageViewController.swift in Sources */,
 				0CB8BBF825F2225E0083F8EB /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
